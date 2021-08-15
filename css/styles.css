@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 8px;
+}
+body {
+  background: #0a0c17;
+  overflow: hidden;
+  font-family: 'Raleway', sans-serif;
+}
+
+#canvas {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.user-image-container {
+  width: 18.5rem;
+  height: 18.5rem;
+  overflow: hidden;
+  border-radius: 50%;
+  border: #fff 5px solid;
+  position: relative;
+  z-index: 2;
+}
+.user-image-container > .user-image {
+  margin: -50px 0px 0px -90px;
+  width: 280px;
+  height: auto;
+}
+.title {
+  font-size: 4.5rem;
+  width: max-content;
+  margin: 2.4rem auto 2.4rem auto;
+  color: #fff;
+  z-index: 9;
+}
+.footer {
+  z-index: 9;
+}
+.footer a {
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.footer .footer-icon {
+  width: 24px;
+  height: auto;
+}
+.footer .footer-icon:hover {
+  opacity: 0.65;
+}
+@media only screen and (min-width: 320px) {
+  html {
+    font-size: 10px;
+  }
+  .title {
+    font-size: 5.4rem;
+  }
+  .user-image-container > .user-image {
+    margin: -45px 0px 0px -75px;
+    width: 280px;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .title {
+    font-size: 9.4rem;
+  }
+}
